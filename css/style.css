@@ -4,7 +4,8 @@
   --color-accent-blue: #3065f8;
   --color-accent-cyan: #3c9f8f;
   --color-background: #f6f6fe;
-  --color-placeholder: #bfbfbf;
+  --color-shadow: #bfbfbf;
+  --border-radius: 5px;
 }
 
 *,
@@ -21,7 +22,7 @@ html {
 
 body {
   font-family: "Open Sans", Arial, Helvetica, sans-serif;
-  font-size: 2rem; /* to be adjusted */
+  font-size: 1.2rem; /* to be adjusted */
   color: var(--color-primary);
 }
 
@@ -30,6 +31,43 @@ h2,
 h3 {
   font-family: "Raleway", Arial, Helvetica, sans-serif;
   color: var(--color-primary);
+}
+
+/* Inputs */
+.input {
+  padding: 1.2rem;
+  border: var(--color-secondary) solid 1px; /* temporary values */
+  border-radius: var(--border-radius);
+}
+
+.input--hero {
+  border: var(--color-primary) solid 1px;
+}
+
+::placeholder {
+  color: var(--color-shadow);
+}
+
+.input:focus {
+  outline: #d19aad solid 1px;
+  border: white solid 1px;
+}
+
+.input-group .btn {
+  background: var(--color-accent-blue);
+  color: var(--color-background);
+  font-weight: 700;
+  padding: 1.2rem;
+  text-align: center;
+  border: none;
+  border-radius: var(--border-radius);
+  box-shadow: 0 0 12px 4px var(--color-shadow);
+}
+
+.input-group .btn:hover,
+.btn:focus {
+  outline: none;
+  background: #6b9bff;
 }
 
 /* Attribution */

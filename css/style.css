@@ -35,8 +35,6 @@ h3 {
 
 /* Inputs */
 .input-group {
-  width: 80%;
-  margin: 0 auto;
   display: flex;
   flex-direction: column;
   gap: 1em;
@@ -44,7 +42,6 @@ h3 {
 
 .call-out .input-group {
   font-size: 1rem;
-  width: 70%;
 }
 
 .input-wrapper .input {
@@ -94,7 +91,12 @@ h3 {
   }
 
   .input-wrapper {
+    width: 60%;
     position: relative;
+  }
+
+  .input-group .btn {
+    width: 40%;
   }
 
   .input-wrapper:focus-within::after {

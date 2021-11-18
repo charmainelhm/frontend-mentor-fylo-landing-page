@@ -34,8 +34,26 @@ h3 {
 }
 
 /* Inputs */
+.input-group {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.call-out .input-group {
+  font-size: 1rem;
+  width: 70%;
+}
+
+.input-wrapper .input {
+  /* ensures that input group within the span group will occupy all available space */
+  width: 100%;
+}
+
 .input {
-  padding: 1.2rem;
+  padding: 1em;
   border: var(--color-secondary) solid 1px; /* temporary values */
   border-radius: var(--border-radius);
 }
@@ -49,7 +67,7 @@ h3 {
 }
 
 .input:focus {
-  outline: #d19aad solid 1px;
+  outline: #cf777e solid 1px;
   border: white solid 1px;
 }
 
@@ -57,9 +75,9 @@ h3 {
   background: var(--color-accent-blue);
   color: var(--color-background);
   font-weight: 700;
-  padding: 1.2rem;
+  padding: 1em;
   text-align: center;
-  border: none;
+  border: var(--color-accent-blue) solid 1px; /* added to ensure that input and button have identical height */
   border-radius: var(--border-radius);
   box-shadow: 0 0 12px 4px var(--color-shadow);
 }
@@ -68,6 +86,24 @@ h3 {
 .btn:focus {
   outline: none;
   background: #6b9bff;
+}
+
+@media screen and (min-width: 768px) {
+  .input-group {
+    flex-direction: row;
+  }
+
+  .input-wrapper {
+    position: relative;
+  }
+
+  .input-wrapper:focus-within::after {
+    display: block;
+    content: "Please check your email";
+    color: #cf777e;
+    position: absolute;
+    bottom: -1.5em;
+  }
 }
 
 /* Attribution */

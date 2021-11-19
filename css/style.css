@@ -22,7 +22,7 @@ html {
 
 body {
   font-family: "Open Sans", Arial, Helvetica, sans-serif;
-  font-size: 1.2rem; /* to be adjusted */
+  font-size: 1.6rem; /* to be adjusted */
   color: var(--color-primary);
 }
 
@@ -158,7 +158,12 @@ a {
 }
 
 .media__title {
-  padding-bottom: 0.3rem;
+  font-size: 1.3rem;
+  padding-bottom: 0.2em;
+}
+
+.media__text {
+  font-size: 1.1rem;
 }
 
 /* Attribution */

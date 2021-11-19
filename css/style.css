@@ -141,6 +141,26 @@ a {
     contrast(92%);
 }
 
+/* Media */
+.media {
+  display: flex;
+  gap: 1rem;
+}
+
+.media__img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.media__body {
+  align-self: center;
+}
+
+.media__title {
+  padding-bottom: 0.3rem;
+}
+
 /* Attribution */
 .attribution {
   font-size: 11px;

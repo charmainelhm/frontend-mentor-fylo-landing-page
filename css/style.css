@@ -166,6 +166,23 @@ a {
   font-size: 1.1rem;
 }
 
+/* Testimonial */
+.testimonial {
+  padding: 2rem;
+  border-radius: 5px;
+  box-shadow: 0 0 20px 10px rgb(231, 231, 231);
+}
+
+.testimonial__icon {
+  margin-bottom: 1rem;
+}
+
+.testimonial__quote {
+  font-size: 1.3rem;
+  line-height: 2rem;
+  margin-bottom: 1.5rem;
+}
+
 /* Attribution */
 .attribution {
   font-size: 11px;

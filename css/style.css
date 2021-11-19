@@ -108,6 +108,39 @@ h3 {
   }
 }
 
+/* Links */
+a {
+  text-decoration: none;
+}
+
+.link-info {
+  /* font-size: 2rem; */
+  display: inline-block;
+  margin-top: 5px;
+  margin-left: 10px; /* to be removed*/
+  color: var(--color-accent-cyan);
+  padding: 0.5rem 0;
+  border-bottom: 1.8px solid var(--color-accent-cyan);
+}
+
+.link-info__icon {
+  vertical-align: middle;
+  /* width: 30px;
+  height: 30px; */
+}
+
+.link-info:hover,
+.link-info:focus {
+  color: #73e0c9;
+  border-color: #73e0c9;
+}
+
+.link-info:hover,
+.link-info:focus .link-info__icon {
+  filter: sepia(73%) saturate(877%) hue-rotate(76deg) brightness(100%)
+    contrast(92%);
+}
+
 /* Attribution */
 .attribution {
   font-size: 11px;

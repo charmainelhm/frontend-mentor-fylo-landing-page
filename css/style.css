@@ -87,6 +87,10 @@ h2 {
   border: var(--color-primary) solid 1px;
 }
 
+.input--callout {
+  border: var(--color-secondary) solid 1px;
+}
+
 ::placeholder {
   font-size: 1.3rem;
   color: var(--color-shadow);
@@ -105,7 +109,14 @@ h2 {
   text-align: center;
   border: var(--color-accent-blue) solid 1px; /* added to ensure that input and button have identical height */
   border-radius: var(--border-radius);
+}
+
+.btn--hero {
   box-shadow: 0 0 10px 2px var(--color-shadow);
+}
+
+.btn--callout {
+  box-shadow: 0 0 10px 2px #414166;
 }
 
 .input-group .btn:hover,
@@ -352,6 +363,29 @@ a {
 
   .info__text {
     width: 75%;
+  }
+}
+
+/* Callout */
+.call-out {
+  text-align: center;
+  background-color: var(--color-secondary);
+}
+
+.call-out__title,
+.call-out__text {
+  color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+  .call-out__text {
+    margin-left: auto;
+    margin-right: auto;
+    width: min(85%, 460px);
+  }
+  .call-out .input-group {
+    width: 75%;
+    margin: 0 auto;
   }
 }
 

@@ -20,6 +20,10 @@
   margin: 0 auto;
 }
 
+.margin-bottom {
+  margin-bottom: 3rem;
+}
+
 /* Typography */
 html {
   font-size: 62.5%;
@@ -40,6 +44,10 @@ h3 {
 
 h1 {
   font-size: 2.4rem;
+}
+
+h2 {
+  font-size: 1.8rem;
 }
 
 @media screen and (min-width: 768px) {
@@ -177,12 +185,12 @@ a {
 }
 
 .media__title {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   padding-bottom: 0.2em;
 }
 
 .media__text {
-  font-size: 1.1rem;
+  font-size: 1rem;
 }
 
 /* Testimonial */
@@ -190,6 +198,9 @@ a {
   padding: 2rem;
   border-radius: 5px;
   box-shadow: 0 0 20px 10px rgb(231, 231, 231);
+  width: min(90%, 360px);
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .testimonial__icon {
@@ -197,7 +208,7 @@ a {
 }
 
 .testimonial__quote {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   line-height: 2rem;
   margin-bottom: 1.5rem;
 }
@@ -301,6 +312,21 @@ a {
   .hero__content {
     width: 50%;
   }
+}
+
+/* Information block */
+.info {
+  text-align: center;
+}
+
+.info > img {
+  width: 100%;
+  margin-bottom: 5rem;
+}
+
+.info .info__text,
+.info .testimonial {
+  text-align: start;
 }
 
 /* Media Icon */

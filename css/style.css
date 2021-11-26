@@ -245,10 +245,6 @@ a {
 }
 
 /* Footer */
-.icon-group {
-  background-color: black;
-}
-
 .icon {
   display: inline-flex;
   width: 30px;
@@ -301,6 +297,11 @@ a {
 
 .footer__list a {
   color: white;
+  transition: color 0.2s ease-out;
+}
+
+.footer__list li:hover a {
+  color: #6b9bff;
 }
 
 .footer__list li {
@@ -326,4 +327,8 @@ a {
 .footer__link {
   list-style-type: none;
   padding-left: 0;
+}
+
+.footer__icon {
+  align-self: center;
 }

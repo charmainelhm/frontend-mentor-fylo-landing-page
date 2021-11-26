@@ -332,3 +332,15 @@ a {
 .footer__icon {
   align-self: center;
 }
+
+@media screen and (min-width: 768px) {
+  .footer__content {
+    flex-direction: row;
+    justify-content: flex-start;
+    column-gap: 12%;
+  }
+
+  .footer__icon {
+    align-self: flex-start;
+  }
+}

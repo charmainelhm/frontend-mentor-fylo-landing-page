@@ -15,6 +15,11 @@
   margin: 0;
 }
 
+.container {
+  width: min(80%, 1200px);
+  margin: 0 auto;
+}
+
 /* Typography */
 html {
   font-size: 62.5%;
@@ -22,7 +27,7 @@ html {
 
 body {
   font-family: "Open Sans", Arial, Helvetica, sans-serif;
-  font-size: 1.6rem; /* to be adjusted */
+  font-size: 1.4rem; /* to be adjusted */
   color: var(--color-primary);
 }
 
@@ -31,6 +36,10 @@ h2,
 h3 {
   font-family: "Raleway", Arial, Helvetica, sans-serif;
   color: var(--color-primary);
+}
+
+h1 {
+  font-size: 2.4rem;
 }
 
 /* Inputs */
@@ -50,7 +59,7 @@ h3 {
 }
 
 .input {
-  padding: 1em;
+  padding: 0.8em;
   border: var(--color-secondary) solid 1px; /* temporary values */
   border-radius: var(--border-radius);
 }
@@ -60,6 +69,7 @@ h3 {
 }
 
 ::placeholder {
+  font-size: 1.3rem;
   color: var(--color-shadow);
 }
 
@@ -72,7 +82,7 @@ h3 {
   background: var(--color-accent-blue);
   color: var(--color-background);
   font-weight: 700;
-  padding: 1em;
+  padding: 0.8em;
   text-align: center;
   border: var(--color-accent-blue) solid 1px; /* added to ensure that input and button have identical height */
   border-radius: var(--border-radius);
@@ -102,6 +112,7 @@ h3 {
   .input-wrapper:focus-within::after {
     display: block;
     content: "Please check your email";
+    font-size: 1.4rem;
     color: #cf777e;
     position: absolute;
     bottom: -1.5em;
@@ -244,7 +255,20 @@ a {
   }
 }
 
-/* Footer */
+/* Hero */
+.hero {
+  text-align: center;
+}
+
+.hero img {
+  width: 100%;
+}
+
+.hero__text {
+  margin-bottom: 3.5rem;
+}
+
+/* Media Icon */
 .icon {
   display: inline-flex;
   width: 30px;

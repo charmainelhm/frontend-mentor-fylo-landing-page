@@ -32,7 +32,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Solution @GitHub](https://github.com/charmainelhm/frontend-mentor-fylo-landing-page)
-- Live Site URL: Live Site](https://xenodochial-poitras-2e8079.netlify.app/)
+- Live Site URL: [Live Site](https://xenodochial-poitras-2e8079.netlify.app/)
 
 ## My process
 

@@ -571,8 +571,10 @@ a {
 .attribution {
   font-size: 11px;
   text-align: center;
+  background-color: var(--color-primary);
+  color: var(--color-background);
 }
 
 .attribution a {
-  color: hsl(228, 45%, 44%);
+  color: var(--color-shadow);
 }

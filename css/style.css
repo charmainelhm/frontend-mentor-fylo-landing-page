@@ -279,6 +279,10 @@ a {
   font-size: 1.4rem;
 }
 
+.nav__item a {
+  color: var(--color-primary);
+}
+
 .nav__item a:hover,
 .nav__item a:focus {
   color: var(--color-secondary);
